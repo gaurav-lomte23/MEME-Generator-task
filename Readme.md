@@ -9,7 +9,7 @@ _32 group website project_
 
 This project is for **educational** porpuses only. Pull request are welcome, but priority for project authors! **_Thank you for your cooperation!_**
 
-Site published at: https://agnekauk.github.io/13-meme-creator/
+Site published at: (https://vercel.com/gaurav-lomte23s-projects/meme-generator-task/HDcoawcra4H6PFfhmuSZxPkYqnn9)
 
 ## Project features
 
@@ -19,4 +19,4 @@ Site published at: https://agnekauk.github.io/13-meme-creator/
 
 ### Authors
 
-Agne: [Github](https://github.com/agnekauk)
+Gaurav Lomte: [Github](https://github.com/gaurav-lomte23).
