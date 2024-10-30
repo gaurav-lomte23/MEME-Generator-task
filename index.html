@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme generator</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/Persist.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/Persist.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>MEME-MAKER TASK</header>
+    <main>
+        <div class="container">
+            <div class="picture">
+                <img src="" alt="Picture">
+                <div class="up text"></div>
+                <div class="down text"></div>
+            </div>
+            <form>
+                <label>Top text</label>
+                <input type="text" name="top-text">
+                <label>Bottom text</label>
+                <input type="text" name="bottom-text">
+                <label>Picture URL</label>
+                <input type="text" name="url">
+                <button type="button" onclick="generateMeme()">Generate</button>
+                
+                <label>Text Color:</label>
+                <div class="color-buttons">
+                    <div class="color-picker">
+                        <span id="changeColorText" onclick="document.getElementById('colorInput').click()">CHANGE COLOR</span>
+                        <input type="color" id="colorInput" onchange="changeTextColor(this.value)" style="display: none;">
+                    </div>
+                    <button type="button" class="color-btn" style="background-color: red;" onclick="changeTextColor('red')"></button>
+                    <button type="button" class="color-btn" style="background-color: blue;" onclick="changeTextColor('blue')"></button>
+                    <button type="button" class="color-btn" style="background-color: green;" onclick="changeTextColor('green')"></button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <div class="saved-memes">
+        <!-- Saved meme images will go here -->
+        <button type="button" onclick="downloadMeme()">Download Meme</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "13-meme-creator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "dead-server --port=3023 --host=localhost"
+  },
+  "author": "Agne",
+  "license": "ISC",
+  "devDependencies": {
+    "dead-server": "^1.0.6"
+  }
+}

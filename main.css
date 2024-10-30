@@ -1,0 +1,204 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+
+}
+
+
+.container {
+    background: linear-gradient(135deg, #a8e6cf, #dcedc1), url("meme_wall.jpg"); /* Light green-blue gradient */
+    background-size: cover; /* Adjusts the background image to cover the container */
+    background-position: center; /* Centers the background image */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+header {
+    background: linear-gradient(120deg, #d3cce3, #e9e4f0);
+
+    text-align: center;
+    margin: 20px 10px 0px 10px;
+    font-size: 40px;
+}
+
+main {        background: linear-gradient(135deg, #a8e6cf, #dcedc1); /* Light green-blue gradient */
+
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.picture {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    background-color: cadetblue;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover; 
+}
+
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+label {
+    display: flex;
+    width: auto;
+    margin-left: 20px;
+    justify-self: flex-start;
+    align-self:flex-start;
+}
+.color-picker #changeColorText {
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+input {
+       background: linear-gradient(120deg, #ffecd2, #fcb69f);
+ width: 90%;
+}
+.color-buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.color-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.text {
+    position: absolute;
+    width: auto;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.up {
+    background-color: transparent; /* Fully transparent background */
+    top: 20px;
+}
+
+.down {
+    bottom: 20px;
+}
+button {
+    padding: 10px 30px;
+    width: auto;
+    font-size: larger;
+    width: 150px;
+    margin-top: 10px;
+    background-color: cadetblue;
+    border-radius: 22px;
+    border: 0.5px solid;
+}
+img {
+    object-fit: cover;
+    flex: 1;
+    overflow: hidden;
+}
+.saved-memes {
+    display: flex;
+    justify-content: center; /* Center-align the memes */
+    flex-wrap: wrap; /* Allow wrapping if there are too many memes */
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 0;
+    position: relative;    bottom: 0;
+    left: 0;
+    background-color: #f0f0f0; /* Optional background color */
+    overflow-y: auto; /* Allow scrolling horizontally if memes overflow */
+}
+
+
+.saved-memes .meme-thumbnail {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.saved-memes .meme-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.saved-memes .meme-thumbnail .up,
+.saved-memes .meme-thumbnail .down {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.saved-memes .meme-thumbnail .up {
+    top: 10%;
+}
+
+.saved-memes .meme-thumbnail .down {
+    bottom: 10%;
+}
+
+
+@media (max-width: 900px){
+    .picture {
+        width: 300px;
+        height: 300px;
+    }
+    form {
+        width: 300px;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        flex-direction: column;
+    }
+    .picture {
+            width: 400px;
+            height: 340px;
+        }
+    form {
+        width: 400px;
+    }
+}
+@media (max-width: 450px){
+    .picture {
+        width: 300px;
+        height: 300px;
+    }
+    form {
+        width: 300px;
+    }
+}
